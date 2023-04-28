@@ -8,6 +8,7 @@ import {
     navLinkText,
     siteTitle
  } from '../components/layout.module.css'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Layout = ({pageTitle, children}) => {
     const data = useStaticQuery(graphql`query {
@@ -20,13 +21,11 @@ const Layout = ({pageTitle, children}) => {
 
     return(
         <div className={container}>
-            <header className={siteTitle}>
-                {data.site.siteMetadata.title}
-            </header>
-            <nav>
+            <header>
+                <nav>
                 <ul className={navLinks}>
                     <li className={navLinkItem}>
-                        <Link to='/' className={navLinkText}>Home</Link>
+                        <Link to='/' className={siteTitle}>{data.site.siteMetadata.title}</Link>
                     </li>
                     <li className={navLinkItem}>
                         <Link to='/about' className={navLinkText}>About Me</Link>
@@ -34,8 +33,14 @@ const Layout = ({pageTitle, children}) => {
                     <li className={navLinkItem}>
                         <Link to='/blog' className={navLinkText}>Blog</Link>
                     </li>
+                    <li>
+                        <a href='https://github.com/amccairel' target='_blank'>
+                            <StaticImage src='../images/github-mark.png' alt='Github Personal Profile Page'/>
+                        </a>
+                    </li>
                 </ul>
             </nav>
+            </header>
             <main>
                 <h1 className={heading}>{pageTitle}</h1>
                 {children}
