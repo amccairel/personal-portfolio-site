@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background: radial-gradient(at top left, rgb(223, 220, 216), rgb(218, 122, 12)) no-repeat;
+}
+
+p {
+    margin: 16px auto;
+    line-height: 1.5em;
+}
+
+/* layout & navbar */
+.layout {
+    max-width: 1200px;
+    margin: 0 auto;
+}
