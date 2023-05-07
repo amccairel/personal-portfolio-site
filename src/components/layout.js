@@ -11,6 +11,9 @@ const Layout = ({pageTitle, children}) => {
                 <h1>{pageTitle}</h1>
                 {children}
             </main>
+            <footer>
+                Copyright 2023 Alex McCairel
+            </footer>
         </div>
     )
 }

@@ -3,7 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
+    charset: `utf-8`,
     title: `Alex McCairel`,
+    author: `Alex McCairel`,
+    description: `A software development portfolio site for, and by, Alex McCairel.`,
     siteUrl: `https://alexmccairel.gatsbyjs.io`,
   },
   plugins: [

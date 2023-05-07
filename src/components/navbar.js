@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { useStaticQuery, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
+import '../styles/global.css'
 
 const Navbar = () => {
 
@@ -16,22 +17,22 @@ const Navbar = () => {
     return(
         <header>
             <nav>
-            <ul>
-                <li>
-                    <Link to='/'>{data.site.siteMetadata.title}</Link>
-                </li>
-                <li>
-                    <Link to='/about'>About Me</Link>
-                </li>
-                <li>
-                    <Link to='/blog'>Blog</Link>
-                </li>
-                <li>
-                    <a href='https://github.com/amccairel'>
-                        <StaticImage src='../images/github-mark.png' alt='Github Personal Profile Page'/>
-                    </a>
-                </li>
-            </ul>
+                <h1 className='logo'>
+                    <Link to='/' className='nav-link'>{data.site.siteMetadata.title}</Link>
+                </h1>
+                <ul>
+                    <li className='nav-item'>
+                        <Link to='/about' className='nav-link'>About Me</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/blog' className='nav-link'>Blog</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <a className='nav-link' href='https://github.com/amccairel'>
+                            <StaticImage src='../images/github-mark.png' alt='Github Personal Profile Page'/>
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </header>
     )
