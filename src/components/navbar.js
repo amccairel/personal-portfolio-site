@@ -1,35 +1,30 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { useStaticQuery, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import '../styles/global.css'
 
 const Navbar = () => {
-
-    const data = useStaticQuery(graphql`query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }`)
-
     return(
         <header>
             <nav>
-                <h1 className='logo'>
-                    <Link to='/' className='nav-link'>{data.site.siteMetadata.title}</Link>
-                </h1>
+                <div className='logo-container'>
+                    <Link to='/'>
+                        <StaticImage className='logo-img' src='../images/logo.svg' alt='Personal logo for Alex McCairel'/>
+                    </Link>
+                </div>
                 <ul>
                     <li className='nav-item'>
-                        <Link to='/about' className='nav-link'>About Me</Link>
+                        <Link to='/about' className='nav-link' activeClassName='active-link'>About</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/blog' className='nav-link'>Blog</Link>
+                        <Link to='/blog' className='nav-link' activeClassName='active-link' partiallyActive={true}>Blog</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/portfolio' className='nav-link' activeClassName='active-link'>Portfolio</Link>
                     </li>
                     <li className='nav-item'>
                         <a className='nav-link' href='https://github.com/amccairel'>
-                            <StaticImage src='../images/github-mark.png' alt='Github Personal Profile Page'/>
+                            <StaticImage className='github-img' src='../images/github-mark-white.svg' alt='Github Personal Profile Page'/>
                         </a>
                     </li>
                 </ul>
