@@ -17,15 +17,13 @@ const Navbar = () => {
                         <Link to='/about' className='nav-link' activeClassName='active-link'>About</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/blog' className='nav-link' activeClassName='active-link' partiallyActive={true}>Blog</Link>
-                    </li>
-                    <li className='nav-item'>
                         <Link to='/portfolio' className='nav-link' activeClassName='active-link'>Portfolio</Link>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link' href='https://github.com/amccairel'>
-                            <StaticImage className='github-img' src='../images/github-mark-white.svg' alt='Github Personal Profile Page'/>
-                        </a>
+                        <Link to='/blog' className='nav-link' activeClassName='active-link' partiallyActive={true}>Blog</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/contact' className='nav-link' activeClassName='active-link'>Contact</Link>
                     </li>
                 </ul>
             </nav>
