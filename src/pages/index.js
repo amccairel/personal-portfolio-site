@@ -4,7 +4,7 @@ import Seo from '../components/seo'
 
 const IndexPage = () => {
   return(
-    <Layout pageTitle="Home Page">
+    <Layout pageTitle="Home">
       <p>Welcome to my personal portfolio site. You can see projects I've completed and my personal interests.</p> 
     </Layout>
   )
