@@ -96,6 +96,8 @@ nav > .logo-container {
     grid-column: 3;
     display: flex;
     flex-direction: row;
+    justify-content: end;
+    align-items: center;
 }
 
 .social-link {
@@ -103,12 +105,14 @@ nav > .logo-container {
     min-width: 44px;
 }
 
-.github-img {
-    max-height: 50px;
-    max-width: 50px;
+.github-logo {
+    margin: 1em;
+    max-height: 75px;
+    max-width: 75px;
 }
 
-.linkedin-img {
-    max-height: 50px;
-    max-width: 100px;
+.linkedin-logo {
+    margin: 1em;
+    max-height: 75px;
+    max-width: 75px;
 }
