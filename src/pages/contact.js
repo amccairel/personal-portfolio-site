@@ -5,8 +5,8 @@ import Seo from "../components/seo"
 const ContactPage = () => {
     return(
         <Layout pageTitle="Contact Me">
-            <p>For questions, generally auspicious conversations, or inquiries, feel free to 
-                 <a href="mailto:mccairelaw@gmail.com"> <b>email</b></a> me.
+            <p>For questions, conversations, or inquiries, feel free to&nbsp;
+                <a href="mailto:mccairelaw@gmail.com"><b>email</b></a> me.
             </p>
         </Layout>
     )

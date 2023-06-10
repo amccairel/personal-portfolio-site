@@ -5,7 +5,7 @@ import '../styles/global.css'
 const Footer = () => {
     return(
         <footer>
-                <span>&copy; Alex McCairel 2023</span>
+                <span className="copyright">Copyright &copy; Alex McCairel 2023</span>
                 <div className="social-media-accounts">
                     <a className="social-link" href='https://github.com/amccairel'>
                         <StaticImage className="github-logo" src='../images/GitHub_Logo_White.png' alt='Github Logo'/>
